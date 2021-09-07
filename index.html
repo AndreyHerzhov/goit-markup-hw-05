@@ -17,8 +17,29 @@
 </head>
 
 <body>
+
+
+    
         <header class="header">
+            
+            
+            <div class="modal-background is-hidden" data-modal >
+                <div class="backdrop is-hidden">
+                        <div class="modal">
+                        <p> </p>
+                    </div>
+                    <button class="button-close" data-modal-close>
+                        <svg class="icon-close" width="30px" height="30">
+                        <use href="../images/sprite.svg#icon-close"></use>
+                        </svg>
+                    </button>
+                
+                </div>
+            </div>
+            
+
             <div class="container container-header">
+                
 
                     <a class="header-logo link" href="index.html">
                     <span class="web">Web</span>Studio
@@ -47,15 +68,23 @@
 
 <main>
         
+
         <section class="hero section">
+
+            
             <div class="container hero-container">
                     <h1 class="hero-titel">Эффективные решения <br>
                         для вашего бизнеса</h1>
-                    <button class="hero-button" type="button">Заказать услугу</button>
+                    <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
+                        
+                        
                 </div>
-        </section>
 
+                
+        </section>
         
+            
+            
 
         
         <section class="main section">
@@ -84,7 +113,7 @@
             </div>
 
         </section>
-
+        
         
         <section class="section-first section">
             
@@ -419,7 +448,9 @@
         </div>
        
     </footer>
-    
+
+    <script src="./js/modal.js"></script>
+
 </body>
 
 </html>
